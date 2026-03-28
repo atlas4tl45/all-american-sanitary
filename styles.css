@@ -3,12 +3,15 @@
    ============================================ */
 
 :root {
-  --navy: #1e3a5f;
-  --navy-dark: #152a45;
-  --navy-light: #2a4d78;
-  --gold: #e8a838;
-  --gold-light: #f0c060;
-  --gold-dark: #c88a20;
+  --navy: #002868;
+  --navy-dark: #001a4d;
+  --navy-light: #1a4080;
+  --red: #BF0A30;
+  --red-light: #d42a4e;
+  --red-dark: #9a0825;
+  --gold: #BF0A30;
+  --gold-light: #d42a4e;
+  --gold-dark: #9a0825;
   --white: #ffffff;
   --gray-50: #f8f9fa;
   --gray-100: #f1f3f5;
@@ -211,10 +214,21 @@ body {
   transform: translateY(-1px);
 }
 
+/* ---- Patriotic Stripe ---- */
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--red) 0%, var(--red) 33%, var(--white) 33%, var(--white) 66%, var(--navy) 66%, var(--navy) 100%);
+}
+
 /* ---- Hero ---- */
 .hero {
   padding: 140px 0 80px;
-  background: linear-gradient(135deg, var(--gray-50) 0%, var(--white) 100%);
+  background: linear-gradient(135deg, #f0f4f8 0%, var(--white) 50%, #fef8f8 100%);
   border-bottom: 1px solid var(--gray-200);
 }
 
@@ -227,8 +241,8 @@ body {
   align-items: center;
   gap: 8px;
   padding: 6px 16px;
-  background: var(--gold);
-  color: var(--navy-dark);
+  background: var(--red);
+  color: var(--white);
   font-weight: 700;
   font-size: 0.8rem;
   border-radius: 100px;
@@ -331,7 +345,7 @@ body {
 }
 
 .service-card:hover {
-  border-color: var(--gold);
+  border-color: var(--red);
   box-shadow: var(--shadow);
   transform: translateY(-2px);
 }
@@ -350,7 +364,7 @@ body {
 
 .service-card:hover .service-icon {
   background: var(--navy);
-  color: var(--gold);
+  color: var(--white);
 }
 
 .service-card h3 {
@@ -371,6 +385,28 @@ body {
   padding: 80px 0;
   background: var(--navy-dark);
   color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.why-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--red);
+}
+
+.why-us::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--red);
 }
 
 .why-us .section-header h2 {
@@ -387,7 +423,7 @@ body {
 .feature-number {
   font-size: 3rem;
   font-weight: 900;
-  color: var(--gold);
+  color: var(--red);
   line-height: 1;
   margin-bottom: 8px;
 }
@@ -452,19 +488,19 @@ body {
 }
 
 .highlight svg {
-  color: var(--gold-dark);
+  color: var(--red);
   flex-shrink: 0;
 }
 
 .highlight-featured {
-  background: var(--navy);
+  background: var(--red);
   color: var(--white);
-  border-color: var(--navy);
+  border-color: var(--red);
   font-weight: 700;
 }
 
 .highlight-featured svg {
-  color: var(--gold);
+  color: var(--white);
 }
 
 /* ---- CTA ---- */
@@ -495,14 +531,14 @@ body {
 }
 
 .cta .btn-primary {
-  background: var(--gold);
-  color: var(--navy-dark);
-  border-color: var(--gold);
+  background: var(--red);
+  color: var(--white);
+  border-color: var(--red);
 }
 
 .cta .btn-primary:hover {
-  background: var(--gold-light);
-  border-color: var(--gold-light);
+  background: var(--red-light);
+  border-color: var(--red-light);
 }
 
 /* ---- Contact ---- */
