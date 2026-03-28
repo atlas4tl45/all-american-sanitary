@@ -652,7 +652,7 @@ body {
 @media (max-width: 640px) {
   .nav {
     position: fixed;
-    top: 72px;
+    top: 76px;
     left: 0;
     right: 0;
     background: var(--white);
@@ -660,9 +660,10 @@ body {
     padding: 16px 24px 24px;
     gap: 16px;
     border-bottom: 1px solid var(--gray-200);
-    transform: translateY(-120%);
+    transform: translateY(-200%);
     transition: transform 300ms ease;
     box-shadow: var(--shadow);
+    z-index: 99;
   }
   .nav.open {
     transform: translateY(0);
