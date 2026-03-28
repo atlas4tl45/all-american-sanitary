@@ -64,6 +64,7 @@ body {
   z-index: 100;
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(12px);
+  border-top: 4px solid var(--red);
   border-bottom: 1px solid transparent;
   transition: border-color var(--transition), box-shadow var(--transition);
 }
@@ -212,17 +213,6 @@ body {
   background: rgba(255,255,255,0.15);
   border-color: rgba(255,255,255,0.7);
   transform: translateY(-1px);
-}
-
-/* ---- Patriotic Stripe ---- */
-.header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--red) 0%, var(--red) 33%, var(--white) 33%, var(--white) 66%, var(--navy) 66%, var(--navy) 100%);
 }
 
 /* ---- Hero ---- */
