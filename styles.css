@@ -379,7 +379,7 @@ body {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   text-align: center;
 }
@@ -454,6 +454,17 @@ body {
 .highlight svg {
   color: var(--gold-dark);
   flex-shrink: 0;
+}
+
+.highlight-featured {
+  background: var(--navy);
+  color: var(--white);
+  border-color: var(--navy);
+  font-weight: 700;
+}
+
+.highlight-featured svg {
+  color: var(--gold);
 }
 
 /* ---- CTA ---- */
@@ -604,7 +615,7 @@ body {
     gap: 40px;
   }
   .features-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
   }
   .contact-grid {
@@ -640,6 +651,9 @@ body {
     display: none;
   }
   .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .features-grid {
     grid-template-columns: 1fr;
   }
   .hero {
