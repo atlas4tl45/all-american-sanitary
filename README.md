@@ -1,11 +1,11 @@
-# All American Sanitary
+# All American Sewer & Drains
 
-Website for All American Sanitary — plumbing and septic services in West Terre Haute, IN.
+Website for All American Sewer & Drains — sewer, drain, plumbing, and septic services in West Terre Haute, IN.
 
 ## About
 
-Serving Vigo County and surrounding areas for over 40 years. 24/7 emergency service.
+Serving Vigo County and surrounding counties in Indiana and Illinois for over 40 years. 24/7 emergency service.
 
 ## Deploy
 
-Static site — deploy to any hosting provider. Just serve `index.html` and `styles.css`.
+Static site — deploy to any hosting provider. Just serve `index.html`, `styles.css`, and `logo.png`.
