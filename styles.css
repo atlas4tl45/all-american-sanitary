@@ -592,6 +592,60 @@ body {
   margin-top: 2px;
 }
 
+.contact-map {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-area {
+  padding: 24px;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+}
+
+.service-area h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--navy-dark);
+  margin-bottom: 6px;
+}
+
+.service-area > p {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  margin-bottom: 16px;
+}
+
+.service-area-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.service-area-county {
+  padding: 10px 14px;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--red);
+}
+
+.service-area-county strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+
+.service-area-county span {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--gray-600);
+  line-height: 1.4;
+}
+
 /* ---- Footer ---- */
 .footer {
   padding: 40px 0;
@@ -707,5 +761,8 @@ body {
   .footer-links {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .service-area-grid {
+    grid-template-columns: 1fr;
   }
 }
